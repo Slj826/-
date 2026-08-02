@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+<meta charset="UTF-8">
+<title>小鹿｜服設</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="小鹿-page">
+
+<header class="archive-header" id="顶端">
+
+<div class="logo">
+    𖤣 小鹿 𖤣
+</div>
+
+<p class="subtitle">
+    Costume Design
+</p>
+
+<p class="motto">
+    角色服裝設定
+</p>
+
+<section id="区块1">
+    <nav>
+        <a href="#1" class="小鹿-button">1</a>
+        <a href="小鹿.html" class="小鹿-button">返回</a>
+    </nav>
+</section>
+
+</header>
+
+
+
+<section id="1">
+
+    <div class="card">
+    
+    <h2>𖤣 1 𖤣</h2>
+
+    <div class="design-gallery">
+
+    <div class="design-item">
+
+        <div class="design-image">
+            <img src="H-服-1a.jpeg" loading="lazy">
+
+        </div>
+
+        <div class="design-text">
+
+            <h4>服設</h4>
+
+        </div>
+    </div>
+
+    </div>
+
+    <p>
+    身上永远带着至少一个铃铛 ～<br>
+    鹿角是蓝色渐变绿色然后再渐变粉色的<br>
+    </p>
+
+    </div>
+
+</section>
+
+<nav>
+
+<div class="back-top">
+    <a href="#顶端" class="小鹿-button2">
+        ↑ 顶端
+    </a>
+</div>
+
+<a href="小鹿.html" class="小鹿-button2">返回</a>
+
+</nav>
+
+<footer>
+
+<p>@ Sljin</p>
+<p>© 2026 Elysia</p>
+
+</footer>
+
+<script>
+document.querySelectorAll("img").forEach(img=>{
+    img.setAttribute("draggable","false");
+});
+
+
+document.addEventListener("keydown", function(e){
+
+    if(
+        e.ctrlKey &&
+        (
+            e.key === "c" ||
+            e.key === "u" ||
+            e.key === "s"
+        )
+    ){
+        e.preventDefault();
+    }
+
+});
+
+
+src="js/script.js"
+</script>
+
+</body>
+</html>

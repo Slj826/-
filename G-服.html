@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+<meta charset="UTF-8">
+<title>蜘蛛｜服設</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="蜘蛛-page">
+
+<header class="archive-header" id="顶端">
+
+<div class="logo">
+    ✣ 蜘蛛 ✣
+</div>
+
+<p class="subtitle">
+    Costume Design
+</p>
+
+<p class="motto">
+    角色服裝設定
+</p>
+
+<section id="区块1">
+    <nav>
+        <a href="#1" class="black-button">1</a>
+        <a href="蜘蛛.html" class="black-button">返回</a>
+    </nav>
+</section>
+
+</header>
+
+
+
+<section id="1">
+
+    <div class="card">
+    
+    <h2>✣ 1 ✣</h2>
+
+    <div class="design-gallery">
+
+    <div class="design-item">
+
+        <div class="design-image">
+            <img src="G-服-1a.jpeg" loading="lazy">
+
+        </div>
+
+        <div class="design-text">
+
+            <h4>QQ人</h4>
+
+        </div>
+    </div>
+
+    </div>
+
+    <p>
+    关节是木偶的那种<br>
+    </p>
+
+    </div>
+
+</section>
+
+<nav>
+
+<div class="back-top">
+    <a href="#顶端" class="black-button2">
+        ↑ 顶端
+    </a>
+</div>
+
+<a href="蜘蛛.html" class="black-button2">返回</a>
+
+</nav>
+
+<footer>
+
+<p>@ Sljin</p>
+<p>© 2026 Elysia</p>
+
+</footer>
+
+<script>
+document.querySelectorAll("img").forEach(img=>{
+    img.setAttribute("draggable","false");
+});
+
+
+document.addEventListener("keydown", function(e){
+
+    if(
+        e.ctrlKey &&
+        (
+            e.key === "c" ||
+            e.key === "u" ||
+            e.key === "s"
+        )
+    ){
+        e.preventDefault();
+    }
+
+});
+
+
+src="js/script.js"
+</script>
+
+</body>
+</html>
