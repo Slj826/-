@@ -606,7 +606,7 @@ nav{
 }
 
 /* =========================
-   quanxian
+   泉先
 ========================= */
 
 .quanxian-page .archive-header{
@@ -635,7 +635,8 @@ nav{
     color:#8A63F8;
 }
 
-.quanxian-page p{
+.quanxian-page p,
+.quanxian-page .quote-box{
     color:#674aa7;
 }
 
@@ -710,7 +711,7 @@ nav{
 }
 
 /* =========================
-   huque
+   滸闕
 ========================= */
 
 
@@ -733,7 +734,7 @@ nav{
     color:#5b8dff;
 }
 
-
+.huque-page .quote-box,
 .huque-page p{
     color:#314981;
 }
@@ -809,7 +810,7 @@ nav{
 }
 
 /* =========================
-   luoliao
+   洛燎 
 ========================= */
 
 .luoliao-page .archive-header{
@@ -828,6 +829,7 @@ nav{
     background:#ffb3b3;
 }
 
+.luoliao-page .quote-box,
 .luoliao-page p{
     color:#8a240a;
 }
@@ -939,7 +941,7 @@ nav{
     color:#3aa8c8;
 }
 
-
+.清栖翎-page .quote-box,
 .清栖翎-page p{
     color:#46738c;
 }
@@ -1021,14 +1023,14 @@ nav{
 
 
 /* =========================
-   夕舒
+   蜘蛛
 ========================= */
-.夕舒-page .archive-header,
-.夕舒-page footer{
+.蜘蛛-page .archive-header,
+.蜘蛛-page footer{
     background:#6c487c;
 }
 
-.夕舒-page{
+.蜘蛛-page{
     background:linear-gradient(
         180deg,
         #6c4a7a 0%,
@@ -1037,42 +1039,46 @@ nav{
     );
 }
 
-.夕舒-page .logo{
+.蜘蛛-page .logo{
     color:#e3c1ff;
 }
 
-.夕舒-page p{
-    color:#1e022c;
+.蜘蛛-page p{
+    color:#3c214a;
 }
 
-.夕舒-page h2,
-.夕舒-page h3,
-.夕舒-page h4,
-.夕舒-page .timeline-item h3{
-    color:#7b5c8a;
+.蜘蛛-page h2,
+.蜘蛛-page h3,
+.蜘蛛-page h4,
+.蜘蛛-page .timeline-item h3{
+    color:#9068a4;
 }
 
-.夕舒-page .timeline-arrow{  
+.蜘蛛-page .timeline-arrow{  
     color:#a98bb8;
 }
 
-.夕舒-page .relationship-card span{
+.蜘蛛-page .relationship-card span{
     color:#6f557a;
 }
 
-.夕舒-page .relationship-content{
+.蜘蛛-page .relationship-content{
     color:#5e4a66;
 }
 
-.夕舒-page .relationship-card img{
+.蜘蛛-page .relationship-card img{
     border:3px solid #d9c3e6;
 }
 
-.夕舒-page .relationship-content{
+.蜘蛛-page .relationship-content{
     color:#c9bfd6;
 }
 
-.夕舒-button{
+.蜘蛛-page .quote-box{
+    color:#5b3f67;
+}
+
+.black-button{
     text-decoration:none;
     background:white;
     color:#6c4a7a;
@@ -1082,7 +1088,7 @@ nav{
     transition:.3s;
 }
 
-.夕舒-button2{
+.black-button2{
     text-decoration:none;
     background:#7a518c;
     color:white;
@@ -1092,10 +1098,10 @@ nav{
     transition:.3s;
 }
 
-.夕舒-page .夕舒-button:hover,
-.夕舒-page .夕舒-button2:hover{
+.蜘蛛-page .black-button:hover,
+.蜘蛛-page .black-button2:hover{
     transform:translateY(-3px);
-    box-shadow:0 6px 18px rgba(2, 0, 4, 0.25);
+    box-shadow:0 6px 18px #240533;
 }
 
 /* =========================
@@ -1123,6 +1129,7 @@ nav{
     );
 }
 
+.兔子-page .quote-box,
 .兔子-page p{
     color:#60748a;
 }
@@ -1192,6 +1199,119 @@ nav{
     box-shadow:
     0 5px 20px rgba(219, 131, 72, 0.35);
 }
+
+
+/* =========================
+   小鹿-page
+========================= */
+
+.小鹿-page .archive-header{
+    background:#bfeee2;
+}
+
+.小鹿-page footer{
+    background:#bfeee2;
+}
+
+.小鹿-page .logo{
+    color:#59b7a0;
+}
+
+.小鹿-page{
+    background:linear-gradient(
+        180deg,
+        #d8f7f0 50%,
+        #e1f9ff 20%,
+        #d8f7f0 100%
+    );
+}
+
+/* 文字 */
+
+.小鹿-page p{
+    color:#5b7d79;
+}
+
+/* Quote */
+
+.小鹿-page .quote-box{
+    background:#f8fffd;
+    color:#5b7d79;
+    border:2px solid #d0efe8;
+}
+
+/* 標題 */
+
+.小鹿-page h2,
+.小鹿-page h3,
+.小鹿-page h4,
+.小鹿-page .timeline-item h3{
+    color:#59b7a0;
+}
+
+/* 時間線 */
+
+.小鹿-page .timeline-arrow{
+    color:#82d5c2;
+}
+
+/* 關係卡 */
+
+.小鹿-page .relationship-card summary::after{
+    color:#82d5c2;
+}
+
+.小鹿-page .relationship-card span{
+    color:#6fb9dd;
+}
+
+.小鹿-page .relationship-card img{
+    border:3px solid #cdeee8;
+}
+
+.小鹿-page .relationship-content{
+    color:#5b7d79;
+}
+
+/* 按鈕 */
+
+.小鹿-button{
+    text-decoration:none;
+    background:white;
+    color:#59b7a0;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    display:inline-block;
+
+    transition:.3s;
+}
+
+.小鹿-button2{
+    text-decoration:none;
+    background:#6fc8b3;
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    display:inline-block;
+
+    transition:.3s;
+}
+
+.小鹿-page .小鹿-button:hover,
+.小鹿-page .小鹿-button2:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 5px 20px rgba(83,184,160,.35);
+}
+
 
 
 
@@ -1554,4 +1674,24 @@ nav{
   text-decoration: none;
   color: inherit;
   display: block;
+}
+
+
+
+/* 角色切换按钮 */
+
+.character-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:40px;
+
+    margin-bottom:40px;
+
 }
