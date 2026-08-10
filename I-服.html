@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+<meta charset="UTF-8">
+<title>自设｜服設</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="自设-page">
+
+<header class="archive-header" id="顶端">
+
+<div class="logo">
+    自设
+</div>
+
+<p class="subtitle">
+    Costume Design
+</p>
+
+<p class="motto">
+    角色服裝設定
+</p>
+
+<section id="区块1">
+    <nav>
+        <a href="#16歲生日" class="自设-button2">16歲生日</a>
+        <a href="#15歲生日" class="自设-button2">15歲生日</a>
+        <a href="自设.html" class="自设-button2">返回</a>
+    </nav>
+</section>
+
+</header>
+
+
+
+<section id="16歲生日">
+
+    <div class="card">
+    
+    <h2>16歲生日</h2>
+
+    <div class="design-gallery">
+
+    <div class="design-item">
+
+        <div class="design-image">
+            <img src="I.jpeg" loading="lazy">
+
+        </div>
+
+        <div class="design-text">
+
+            <h4>头像</h4>
+
+        </div>
+    </div>
+
+    <div class="design-item">
+
+        <div class="design-image">
+            <img src="I-服-16a.jpeg" loading="lazy">
+
+        </div>
+
+        <div class="design-text">
+
+            <h4>半身</h4>
+
+        </div>
+    </div>
+
+    <div class="design-item">
+
+        <div class="design-image">
+            <img src="I-服-16b.jpeg" loading="lazy">
+
+        </div>
+
+        <div class="design-text">
+
+            <h4>服設</h4>
+
+        </div>
+    </div>
+
+    </div>
+
+    <p>
+    发尾是彩色来的！眼疃是錢！
+    </p>
+
+    </div>
+
+</section>
+
+<section id="15歲生日">
+
+    <div class="card">
+    
+    <h2>15歲生日</h2>
+
+    <div class="design-gallery">
+
+    <div class="design-item">
+
+        <div class="design-image">
+            <img src="I-服-15a.jpeg" loading="lazy">
+
+        </div>
+
+        <div class="design-text">
+
+            <h4>半身</h4>
+
+        </div>
+    </div>
+
+    </div>
+
+    <p>
+    发尾是彩色来的！眼疃是錢！
+    </p>
+
+    </div>
+
+</section>
+
+<nav>
+
+<div class="back-top">
+    <a href="#顶端" class="自设-button">
+        ↑ 顶端
+    </a>
+</div>
+
+<a href="自设.html" class="自设-button">返回</a>
+
+</nav>
+
+<footer>
+
+<p>@ Sljin</p>
+<p>© 2026 Elysia</p>
+
+</footer>
+
+<script>
+document.querySelectorAll("img").forEach(img=>{
+    img.setAttribute("draggable","false");
+});
+
+
+document.addEventListener("keydown", function(e){
+
+    if(
+        e.ctrlKey &&
+        (
+            e.key === "c" ||
+            e.key === "u" ||
+            e.key === "s"
+        )
+    ){
+        e.preventDefault();
+    }
+
+});
+
+
+src="js/script.js"
+</script>
+
+</body>
+</html>

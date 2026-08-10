@@ -1313,6 +1313,244 @@ nav{
 }
 
 
+/* =========================
+   自设-page
+========================= */
+
+.自设-page .archive-header{
+    background:linear-gradient(
+        90deg,
+        #ffc9dc,
+        #d9c8ff,
+        #c7e7ff
+    );
+}
+
+.自设-page footer{
+    background:linear-gradient(
+        90deg,
+        #c7e7ff,
+        #d9c8ff,
+        #ffc9dc
+    );
+}
+
+.自设-page .logo{
+    color:#e879a7;
+}
+
+
+.自设-page{
+    font-family:"霞鹜文楷","LXGW WenKai",serif;
+
+    background:linear-gradient(
+        180deg,
+        #d9efff 0%,
+        #fff0f6 25%,
+        #fff6dc 50%,
+        #e7f8f1 75%,
+        #eee4ff 100%
+    );
+}
+
+
+.自设-page .quote-box,
+.自设-page p{
+    color:#657080;
+}
+
+.自设-page .relationship-content{
+    color:#657080;
+}
+
+.自设-page h2{
+    color:#d96f9d;
+}
+
+.自设-page h3{
+    color:#8c73d8;
+}
+
+.自设-page h4{
+    color:#55a8a0;
+}
+
+.自设-page .timeline-item h3{
+    color:#e59a55;
+}
+
+
+.自设-page .timeline-arrow{
+    color:#7daed8;
+}
+
+
+.自设-page .relationship-card{
+    background:rgba(255,255,255,0.75);
+
+    border:2px solid #eadcff;
+
+    border-radius:18px;
+
+    transition:.3s;
+}
+
+.自设-page .relationship-card:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 8px 22px rgba(140,115,216,0.18);
+}
+
+
+
+.自设-page .relationship-card:nth-child(1) summary{
+    color:#e879a7;
+}
+
+.自设-page .relationship-card:nth-child(2) summary{
+    color:#8c73d8;
+}
+
+.自设-page .relationship-card:nth-child(3) summary{
+    color:#58aaa1;
+}
+
+.自设-page .relationship-card:nth-child(4) summary{
+    color:#e59a55;
+}
+
+.自设-page .relationship-card:nth-child(5) summary{
+    color:#6fa7d8;
+}
+
+
+
+.自设-page .relationship-card summary::after{
+    color:#9c83d9;
+}
+
+.自设-page .relationship-card span{
+    color:#df7d9d;
+}
+
+
+/* 关系人物图片 */
+
+.自设-page .relationship-card img{
+    border:3px solid #f1d6e4;
+}
+
+.自设-page .quote-box{
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+    );
+}
+
+
+.自设-button{
+    text-decoration:none;
+
+    background:linear-gradient(
+        90deg,
+        #ffc6dc,
+        #d8c7ff
+    );
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    display:inline-block;
+
+    transition:.3s;
+
+    box-shadow:
+    0 4px 12px rgba(210,150,190,0.18);
+}
+
+
+/* =========================
+   按钮 2 —— 薄荷蓝
+========================= */
+
+.自设-button2{
+    text-decoration:none;
+
+    background:linear-gradient(
+        90deg,
+        #9fded5,
+        #9fc9ed
+    );
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    display:inline-block;
+
+    transition:.3s;
+
+    box-shadow:
+    0 4px 12px rgba(120,180,190,0.18);
+}
+
+
+.自设-page .自设-button:hover,
+.自设-page .自设-button2:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 7px 20px rgba(150,120,190,0.28);
+}
+
+.自设-page .card{
+    background:rgba(255,255,255,0.78);
+
+    border-radius:18px;
+
+    border:2px solid #f1d4e1;
+
+    transition:.3s;
+}
+
+.自设-page .card:nth-child(2){
+    border-color:#d9cdf5;
+}
+
+.自设-page .card:nth-child(3){
+    border-color:#c9e8e1;
+}
+
+.自设-page .card:nth-child(4){
+    border-color:#f5dfb8;
+}
+
+.自设-page .card:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 8px 22px rgba(120,120,160,0.16);
+}
+
+.自设-page .archive-header::after{
+    color:#a88bd8;
+}
+
+.自设-page strong{
+    color:#df789f;
+}
+
+.自设-page em{
+    color:#7b9fd1;
+}
+
 
 
 /* ===== 時間線 ===== */
