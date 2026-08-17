@@ -982,7 +982,7 @@ nav{
     color:#46738c;
 }
 
-.green-button{
+.清栖翎-button{
     text-decoration:none;
     background:white;
     color:#3aa8c8;
@@ -996,7 +996,7 @@ nav{
     transition:.3s;
 }
 
-.green-button2{
+.清栖翎-button2{
     text-decoration:none;
     background:#63cde0;
     color:white;
@@ -1006,7 +1006,7 @@ nav{
     transition:.3s;
 }
 
-.清栖翎-page .green-button:hover{
+.清栖翎-page .清栖翎-button:hover{
 
     transform:translateY(-3px);
 
@@ -1014,7 +1014,7 @@ nav{
     0 5px 20px rgba(23, 120, 133, 0.45);
 }
 
-.清栖翎-page .green-button2:hover{
+.清栖翎-page .清栖翎-button2:hover{
     transform:translateY(-3px);
 
     box-shadow:
@@ -1314,6 +1314,228 @@ nav{
 
 
 /* =========================
+   小狼
+========================= */
+
+.小狼-page .archive-header{
+    background:#a8dcd6;
+}
+
+.小狼-page footer{
+    background:#a8dcd6;
+}
+
+.小狼-page{
+    background:linear-gradient(
+        180deg,
+        #c8ebe7 0%,
+        #edfafa 100%
+    );
+}
+
+.小狼-page .logo{
+    color:#174d49;
+}
+
+.小狼-page .quote-box,
+.小狼-page p{
+    color:#203f40;
+}
+
+.小狼-page h3{
+    color:#216b68;
+}
+
+.小狼-page h4{
+    color:#216b68;
+}
+
+.小狼-page h2{
+    color:#216b68;
+}
+
+.小狼-page .card{
+    color:#174d49;
+}
+
+.小狼-page .timeline-item h3{
+    color:#216b68;
+}
+
+.小狼-page .timeline-arrow{
+    color:#4dbab3;
+}
+
+.小狼-page .relationship-card summary::after{
+    color:#174d49;
+}
+
+.小狼-page .relationship-card span{
+    color:#216b68;
+}
+
+.小狼-page .relationship-card img{
+    border:3px solid #a8dcd6;
+}
+
+.green-button{
+    text-decoration:none;
+    background:white;
+    color:#29938d;
+    padding:12px 24px;
+    border-radius:999px;
+    display:inline-block;
+    transition:.3s;
+}
+
+.green-button2{
+    text-decoration:none;
+    background:#29938d;
+    color:white;
+    padding:12px 24px;
+    border-radius:999px;
+    display:inline-block;
+    transition:.3s;
+}
+
+.小狼-page .green-button:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 5px 15px rgba(20, 93, 88, 0.35);
+}
+
+.小狼-page .green-button2:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 5px 15px rgba(20, 93, 88, 0.35);
+}
+
+
+/* =========================
+   小蝴蝶
+========================= */
+
+.蝴蝶-page .archive-header{
+    background:#d9dce6;
+}
+
+.蝴蝶-page footer{
+    background:#d9dce6;
+}
+
+.蝴蝶-page{
+    background:linear-gradient(
+        180deg,
+        #e8e9ef 0%,
+        #f7f7fa 55%,
+        #eef1f6 100%
+    );
+}
+
+.蝴蝶-page .logo{
+    color:#303746;
+}
+
+.蝴蝶-page .quote-box,
+.蝴蝶-page p{
+    color:#4d5362;
+}
+
+.蝴蝶-page h2{
+    color:#3b4353;
+}
+
+.蝴蝶-page h3{
+    color:#3b4353;
+}
+
+.蝴蝶-page h4{
+    color:#3b4353;
+}
+
+.蝴蝶-page .card{
+    color:#303746;
+}
+
+.蝴蝶-page .timeline-item h3{
+    color:#3b4353;
+}
+
+.蝴蝶-page .timeline-arrow{
+    color:#609fd1;
+}
+
+.蝴蝶-page .relationship-card summary::after{
+    color:#609fd1;
+}
+
+.蝴蝶-page .relationship-card span{
+    color:#3b4353;
+}
+
+.蝴蝶-page .relationship-card img{
+    border:3px solid #cfd5e0;
+}
+
+.蝴蝶-page .relationship-content{
+    color:#4d5362;
+}
+
+
+/* ===== 蝴蝶按钮 ===== */
+
+.蝴蝶-button{
+    text-decoration:none;
+
+    background:white;
+
+    color:#4e82b3;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    display:inline-block;
+
+    transition:.3s;
+}
+
+.蝴蝶-button2{
+    text-decoration:none;
+
+    background:#609fd1;
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    display:inline-block;
+
+    transition:.3s;
+}
+
+.蝴蝶-page .蝴蝶-button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 5px 20px rgba(67, 91, 120, 0.25);
+}
+
+.蝴蝶-page .蝴蝶-button2:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 5px 20px rgba(67, 91, 120, 0.35);
+}
+
+
+/* =========================
    自设-page
 ========================= */
 
@@ -1473,9 +1695,6 @@ nav{
 }
 
 
-/* =========================
-   按钮 2 —— 薄荷蓝
-========================= */
 
 .自设-button2{
     text-decoration:none;
@@ -1510,34 +1729,6 @@ nav{
     0 7px 20px rgba(150,120,190,0.28);
 }
 
-.自设-page .card{
-    background:rgba(255,255,255,0.78);
-
-    border-radius:18px;
-
-    border:2px solid #f1d4e1;
-
-    transition:.3s;
-}
-
-.自设-page .card:nth-child(2){
-    border-color:#d9cdf5;
-}
-
-.自设-page .card:nth-child(3){
-    border-color:#c9e8e1;
-}
-
-.自设-page .card:nth-child(4){
-    border-color:#f5dfb8;
-}
-
-.自设-page .card:hover{
-    transform:translateY(-3px);
-
-    box-shadow:
-    0 8px 22px rgba(120,120,160,0.16);
-}
 
 .自设-page .archive-header::after{
     color:#a88bd8;
