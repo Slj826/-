@@ -4,6 +4,19 @@
     box-sizing:border-box;
 }
 
+html,
+body{
+    -webkit-user-select:none;
+    user-select:none;
+}
+
+a,
+a:hover,
+a:visited,
+a:active{
+    text-decoration:none;
+}
+
 html{
     scroll-behavior:smooth;
 }
@@ -2780,3 +2793,111 @@ section{
 @media (max-width:768px){
     .world-law-grid{ grid-template-columns:1fr; }
 }
+
+/* =========================
+   角色主題開場動畫
+========================= */
+
+.intro-lock{ overflow:hidden; }
+
+.character-intro{
+    position:fixed;
+    inset:0;
+    z-index:100000;
+    display:grid;
+    place-items:center;
+    overflow:hidden;
+    color:#fff;
+    opacity:1;
+    transition:opacity .85s ease, visibility .85s ease;
+}
+
+.character-intro.intro-leave{
+    opacity:0;
+    visibility:hidden;
+}
+
+.intro-haze{
+    position:absolute;
+    inset:-20%;
+    background:radial-gradient(circle, rgba(255,255,255,.30), transparent 36%);
+    animation:introHaze 4s ease-in-out infinite alternate;
+}
+
+.intro-copy{
+    position:relative;
+    z-index:2;
+    max-width:min(88vw,680px);
+    padding:28px;
+    text-align:center;
+    text-shadow:0 2px 18px rgba(0,0,0,.28);
+    animation:introCopy 1s ease both;
+}
+
+.intro-name{
+    font-size:clamp(38px,8vw,68px);
+    font-weight:700;
+    letter-spacing:.15em;
+}
+
+.intro-copy p{
+    margin:16px 0 0;
+    color:inherit;
+    font-size:clamp(14px,2.8vw,18px);
+}
+
+.intro-motifs span{
+    position:absolute;
+    left:calc(var(--i, 1) * 6%);
+    top:calc(var(--j, 1) * 11%);
+    opacity:.5;
+    font-size:clamp(18px,4vw,42px);
+    animation:introFloat 3.6s ease-in-out infinite alternate;
+}
+
+.intro-motifs span:nth-child(2n){ left:12%; top:18%; animation-delay:-1s; }
+.intro-motifs span:nth-child(3n){ left:76%; top:68%; animation-delay:-2.2s; }
+.intro-motifs span:nth-child(5n){ left:88%; top:16%; animation-delay:-.6s; }
+.intro-motifs span:nth-child(7n){ left:28%; top:78%; animation-delay:-1.6s; }
+.intro-motifs span:nth-child(11n){ left:60%; top:10%; animation-delay:-2.8s; }
+
+.intro--tide{ background:linear-gradient(145deg,#624b9e,#ba78b0 52%,#85c7d6); }
+.intro--tide .intro-motifs span{ color:#f1ddff; animation-name:introTide; }
+
+.intro--fire{ background:radial-gradient(circle at 50% 72%,#e89138 0 3%,transparent 30%),linear-gradient(145deg,#291b38,#943f42 58%,#e49a42); }
+.intro--fire .intro-motifs span{ color:#ffd071; animation-name:introSpark; }
+
+.intro--sky{ background:linear-gradient(145deg,#263d73,#6f85bf 55%,#d4e7f5); }
+.intro--sky .intro-motifs span{ color:#fff; animation-name:introFeather; }
+
+.intro--moon{ background:radial-gradient(circle at 50% 28%,#fff7d9 0 8%,transparent 9%),linear-gradient(155deg,#28445c,#87a7c9 56%,#dce8ec); }
+.intro--moon .intro-motifs span{ color:#fff8d5; animation-name:introMoon; }
+
+.intro--wind{ background:linear-gradient(150deg,#55bfb2,#a7e6d2 54%,#f6c1d9); }
+.intro--wind .intro-motifs span{ color:#fff4a8; animation-name:introTide; }
+
+.intro--ink{ background:linear-gradient(145deg,#102a2f,#28615c 52%,#7699a0); }
+.intro--ink .intro-motifs span{ color:#a5e5db; animation-name:introInk; }
+
+.intro--thread{ background:radial-gradient(circle at 50% 45%,#76527c 0 2%,transparent 30%),linear-gradient(145deg,#1e1726,#593955 58%,#a878a5); }
+.intro--thread .intro-motifs span{ color:#f0c7e9; animation-name:introThread; }
+
+.intro--rabbit{ background:linear-gradient(145deg,#4154a2,#7198d3 52%,#dd6e91); }
+.intro--rabbit .intro-motifs span{ color:#fff; animation-name:introFloat; }
+
+.intro--butterfly{ background:linear-gradient(145deg,#171e52,#365bb1 56%,#88bee8); }
+.intro--butterfly .intro-motifs span{ animation-name:introButterfly; }
+
+.intro--prism{ background:linear-gradient(135deg,#ec8fa6,#ffc876 25%,#a9e1aa 49%,#87c7ed 72%,#b69be2); }
+.intro--prism .intro-motifs span{ color:#fff8ba; animation-name:introSpark; }
+
+@keyframes introCopy{ from{opacity:0;transform:scale(.86)} to{opacity:1;transform:scale(1)} }
+@keyframes introHaze{ from{transform:scale(.85) rotate(0)} to{transform:scale(1.18) rotate(15deg)} }
+@keyframes introFloat{ from{transform:translateY(-18px) rotate(-8deg)} to{transform:translateY(22px) rotate(10deg)} }
+@keyframes introTide{ from{transform:translate(-20px,16px) rotate(-12deg)} to{transform:translate(20px,-16px) rotate(12deg)} }
+@keyframes introSpark{ from{opacity:0;transform:translateY(45px) scale(.6)} to{opacity:.9;transform:translateY(-55px) scale(1.2)} }
+@keyframes introFeather{ from{transform:translate(-30px,-18px) rotate(-24deg)} to{transform:translate(26px,42px) rotate(18deg)} }
+@keyframes introMoon{ from{opacity:.15;transform:scale(.6)} to{opacity:.85;transform:scale(1.3)} }
+@keyframes introInk{ from{transform:scale(.5) rotate(0);opacity:.15} to{transform:scale(1.35) rotate(55deg);opacity:.75} }
+@keyframes introThread{ from{transform:translateY(-30px) rotate(0)} to{transform:translateY(35px) rotate(180deg)} }
+@keyframes introButterfly{ from{transform:translate(-20px,20px) rotate(-18deg)} to{transform:translate(28px,-30px) rotate(22deg)} }

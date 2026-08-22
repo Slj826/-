@@ -1,133 +1,49 @@
-const chapter1 = [
-
-{
-bg:"王城.png",
-speaker:"旁白",
-text:"她成为了女王。"
-},
-
-{
-bg:"王城.png",
-speaker:"旁白",
-text:"也成为了“王国本身”。"
-},
-
-{
-bg:"王城.png",
-speaker:"旁白",
-text:"她没有离开过王座。"
-},
-
-{
-bg:"王城.png",
-speaker:"旁白",
-text:"她没有离开过王座。"
-},
-
-{
-bg:"王城.png",
-speaker:"旁白",
-text:"她曾是被爱包围的孩子。"
-},
-
-{
-bg:"王城.png",
-speaker:"旁白",
-text:"后来。"
-},
-
-{
-bg:"王城.png",
-speaker:"旁白",
-text:"她成为了守护整个国家的王。"
-},
-
-{
-bg:"王城.png",
-speaker:"旁白",
-text:"直到生命的尽头。"
-}
-
+const scenes = [
+  {
+    "bg": "王城.png",
+    "speaker": "旁白",
+    "text": "寓幽成为了艾尔德利亚的女王。"
+  },
+  {
+    "bg": "王城.png",
+    "speaker": "旁白",
+    "text": "她依然会微笑，只是再也没人能从笑容里看见从前的快乐。"
+  },
+  {
+    "bg": "王城.png",
+    "speaker": "清栖翎",
+    "text": "女王陛下。"
+  },
+  {
+    "bg": "王城.png",
+    "speaker": "寓幽",
+    "text": "老师，怎么了？"
+  },
+  {
+    "bg": "王城.png",
+    "speaker": "旁白",
+    "text": "清栖翎看见了新的未来：女王独自站在尸山之上。"
+  },
+  {
+    "bg": "王城.png",
+    "speaker": "清栖翎",
+    "text": "没什么。只是想告诉你，我会在这里。"
+  },
+  {
+    "bg": "王城.png",
+    "speaker": "寓幽",
+    "text": "好。那我们一起，把这个国家重新建起来。"
+  },
+  {
+    "bg": "王城.png",
+    "speaker": "旁白",
+    "text": "那个想旅行、想开甜品店的女孩，永远留在了十六岁的春天。"
+  },
+  {
+    "bg": "王城.png",
+    "speaker": "旁白",
+    "text": "而女王的故事，才刚刚开始。"
+  }
 ];
 
-
-let current = 0;
-
-let typingTimer = null;
-
-window.onload = () => {
-loadScene();
-typeText();
-};
-
-function loadScene(){
-
-const data = chapter1[current];
-
-document.getElementById("speaker").innerText = data.speaker;
-
-// 背景切换
-document.getElementById("storyBg").style.backgroundImage =
-`url(${data.bg})`;
-}
-
-// 打字机效果
-function typeText(){
-
-const text = chapter1[current].text;
-
-let i = 0;
-
-const box = document.getElementById("dialogText");
-box.innerText = "";
-
-clearInterval(typingTimer);
-
-typingTimer = setInterval(()=>{
-
-box.innerText += text[i];
-i++;
-
-if(i >= text.length){
-clearInterval(typingTimer);
-}
-
-},30);
-}
-
-// 点击推进
-document.getElementById("storyPlayer")
-.addEventListener("click",()=>{
-
-// 如果还在打字 → 直接显示完整
-if(document.getElementById("dialogText").innerText
-!== chapter1[current].text){
-
-clearInterval(typingTimer);
-document.getElementById("dialogText").innerText =
-chapter1[current].text;
-
-return;
-}
-
-// 下一句
-current++;
-
-if(current >= chapter1.length){
-
-document.getElementById("speaker").innerText = "";
-document.getElementById("dialogText").innerText = "——序章結束——";
-
-setTimeout(()=>{
-
-window.location.href="A-剧.html";
-
-},1200);
-
-return;
-}
-
-loadScene();
-typeText();
-
-});
+startStory(scenes, "——终章：献予王国——");
