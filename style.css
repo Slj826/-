@@ -1742,6 +1742,413 @@ nav{
     color:#7b9fd1;
 }
 
+/* =========================
+   艾爾德利亞-page
+   與角色頁統一間距
+========================= */
+
+
+/* ===== 頁面整體 ===== */
+
+.eldelia-page{
+    background:linear-gradient(
+        180deg,
+        #eff3ff 0%,
+        #fafbff 50%,
+        #edf0fa 100%
+    );
+}
+
+
+/* ===== Header ===== */
+
+.eldelia-page .archive-header{
+    background:#dfe4f7;
+
+    min-height:380px;
+
+    padding:50px 40px 20px;
+
+    margin-bottom:40px;
+}
+
+
+/* ===== Footer ===== */
+
+.eldelia-page footer{
+    background:#dfe4f7;
+}
+
+
+/* ===== Logo ===== */
+
+.eldelia-page .logo{
+    color:#5b5aa8;
+}
+
+
+/* =========================
+   Section
+========================= */
+
+.eldelia-page section{
+    padding:50px 8%;
+
+    animation:fadeUp .8s ease;
+}
+
+
+/* =========================
+   Section 標題
+========================= */
+
+.eldelia-page h2{
+    margin-bottom:30px;
+
+    color:#5b5aa8;
+
+    font-size:1.5em;
+}
+
+
+/* =========================
+   小標題
+========================= */
+
+.eldelia-page h3{
+    margin-top:25px;
+    margin-bottom:8px;
+
+    color:#6d6caf;
+
+    font-size:20px;
+}
+
+.eldelia-page h4{
+    margin-top:25px;
+    margin-bottom:8px;
+
+    color:#6d6caf;
+
+    font-size:20px;
+}
+
+
+/* =========================
+   段落
+========================= */
+
+.eldelia-page p{
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+    color:#515777;
+}
+
+
+/* =========================
+   一般 Card
+========================= */
+
+.eldelia-page .card{
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+
+    max-width:1000px;
+
+    margin:auto;
+}
+
+
+/* =========================
+   國家內 Card Grid
+========================= */
+
+.eldelia-page .character-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+
+/* =========================
+   國家內小卡片
+========================= */
+
+.eldelia-page .character-card{
+    background:white;
+
+    padding:20px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+
+    transition:.3s ease;
+
+    overflow:hidden;
+}
+
+
+/* ===== 小卡片 Hover ===== */
+
+.eldelia-page .character-card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 35px rgba(91,90,168,.16);
+}
+
+
+/* =========================
+   Timeline
+========================= */
+
+.eldelia-page .timeline{
+    max-width:700px;
+
+    margin:auto;
+}
+
+.eldelia-page .timeline-item{
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+}
+
+.eldelia-page .timeline-item h3{
+    margin-top:0;
+
+    margin-bottom:10px;
+
+    color:#6d6caf;
+}
+
+.eldelia-page .timeline-arrow{
+    text-align:center;
+
+    font-size:40px;
+
+    color:#9996d1;
+
+    margin:15px 0;
+}
+
+
+/* =========================
+   Relationship
+========================= */
+
+.eldelia-page .relationship-list{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.eldelia-page .relationship-card{
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 3px 10px rgba(0,0,0,.08);
+}
+
+.eldelia-page .relationship-card summary{
+    list-style:none;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:15px 20px;
+
+    cursor:pointer;
+}
+
+.eldelia-page .relationship-card summary::-webkit-details-marker{
+    display:none;
+}
+
+.eldelia-page .relationship-card summary::after{
+    content:"▶";
+
+    margin-left:auto;
+
+    color:#9996d1;
+
+    transition:.3s;
+}
+
+.eldelia-page .relationship-card[open] summary::after{
+    transform:rotate(90deg);
+}
+
+.eldelia-page .relationship-card img{
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid #c7c9ed;
+}
+
+.eldelia-page .relationship-card span{
+    font-size:1.1rem;
+
+    font-weight:bold;
+
+    color:#5b5aa8;
+}
+
+.eldelia-page .relationship-content{
+    padding:0 20px 20px;
+
+    color:#515777;
+
+    line-height:1.8;
+}
+
+
+/* =========================
+   Quote
+========================= */
+
+.eldelia-page .quote-box{
+    max-width:700px;
+
+    margin:30px auto;
+
+    padding:20px;
+
+    background:white;
+
+    border-radius:20px;
+
+    color:#515777;
+
+    font-style:italic;
+
+    text-align:center;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.08);
+}
+
+
+/* =========================
+   按鈕
+========================= */
+
+.eldelia-button{
+    text-decoration:none;
+
+    background:white;
+
+    color:#5b5aa8;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    display:inline-block;
+
+    transition:.3s;
+}
+
+.eldelia-button2{
+    text-decoration:none;
+
+    background:#706fc0;
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    display:inline-block;
+
+    transition:.3s;
+}
+
+
+/* ===== Button Hover ===== */
+
+.eldelia-page .eldelia-button:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 5px 20px rgba(91,90,168,.25);
+}
+
+.eldelia-page .eldelia-button2:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 5px 20px rgba(91,90,168,.35);
+}
+
+
+/* =========================
+   手機版
+========================= */
+
+@media(max-width:768px){
+
+    .eldelia-page section{
+        padding:40px 6%;
+    }
+
+    .eldelia-page .card{
+        padding:25px;
+    }
+
+    .eldelia-page h2{
+        margin-bottom:25px;
+    }
+
+    .eldelia-page .character-grid{
+        gap:20px;
+    }
+
+    .eldelia-page .character-card{
+        padding:20px;
+    }
+
+}
+
+
+
+
 
 
 /* ===== 時間線 ===== */
@@ -2123,4 +2530,253 @@ nav{
 
     margin-bottom:40px;
 
+}
+
+/* =========================
+   世界觀與國家檔案共用樣式
+========================= */
+
+body{
+    font-family:"Quicksand", "Noto Sans TC", sans-serif;
+}
+
+main{
+    overflow:hidden;
+}
+
+section{
+    scroll-margin-top:24px;
+}
+
+.character-link:focus-visible,
+.pink-button:focus-visible,
+.eldelia-button:focus-visible{
+    outline:3px solid rgba(255,95,162,.55);
+    outline-offset:4px;
+}
+
+/* 瑟蘭迪斯：以森林與靈獸意象和首頁、艾爾德利亞做出區隔。 */
+.serandis-page{
+    background:linear-gradient(180deg, #eef8f2 0%, #fbfdf8 52%, #edf4ef 100%);
+    color:#405b4b;
+}
+
+.serandis-page .archive-header,
+.serandis-page footer{
+    background:#cfe8d6;
+}
+
+.serandis-page .logo,
+.serandis-page h2,
+.serandis-page h3{
+    color:#397356;
+}
+
+.serandis-page p,
+.serandis-page li{
+    color:#466653;
+}
+
+.serandis-page .pink-button{
+    color:#397356;
+}
+
+.serandis-page .pink-button:hover{
+    box-shadow:0 5px 15px rgba(57,115,86,.25);
+}
+
+.serandis-page .card{
+    border:1px solid rgba(57,115,86,.10);
+}
+
+/* =========================
+   伊萊希亞世界首頁：夜櫻星雲
+========================= */
+
+.world-page{
+    background:
+        radial-gradient(circle at 12% 10%, rgba(255,203,235,.55), transparent 28%),
+        radial-gradient(circle at 88% 24%, rgba(183,205,255,.56), transparent 30%),
+        linear-gradient(160deg, #f5efff 0%, #fff9fc 48%, #edf4ff 100%);
+    color:#554a78;
+}
+
+.world-page .archive-header,
+.world-page footer{
+    background:
+        radial-gradient(circle at 18% 25%, rgba(255,255,255,.48) 0 2px, transparent 3px),
+        radial-gradient(circle at 79% 42%, rgba(255,255,255,.42) 0 1.5px, transparent 2.5px),
+        linear-gradient(135deg, #786bb6 0%, #a779b6 50%, #6d91c6 100%);
+}
+
+.world-page .logo{
+    color:#fff;
+    letter-spacing:.08em;
+    text-shadow:0 2px 16px rgba(54,40,104,.30);
+}
+
+.world-page .subtitle,
+.world-page .motto,
+.world-page footer{
+    color:#fff;
+}
+
+.world-page h2,
+.world-page h3{
+    color:#735a9f;
+}
+
+.world-page p{
+    color:#5e5579;
+}
+
+.world-page .subtitle,
+.world-page .motto,
+.world-page footer p{
+    color:#fff;
+}
+
+.world-page .card,
+.world-page .character-card{
+    background:rgba(255,255,255,.78);
+    border:1px solid rgba(125,96,174,.12);
+    box-shadow:0 10px 30px rgba(94,73,145,.11);
+}
+
+.world-page .character-card:hover{
+    box-shadow:0 18px 38px rgba(95,75,151,.20);
+}
+
+.world-page .pink-button{
+    background:rgba(255,255,255,.90);
+    color:#6b579c;
+    box-shadow:0 4px 12px rgba(52,42,103,.12);
+}
+
+.world-page .pink-button:hover{
+    background:#fff;
+    box-shadow:0 7px 18px rgba(52,42,103,.22);
+}
+
+@media (max-width:768px){
+    .archive-header{
+        min-height:auto;
+        padding:42px 20px 18px;
+    }
+
+    section{
+        padding:42px 6%;
+    }
+
+    .image-wrapper{
+        height:240px;
+    }
+}
+
+/* =========================
+   世界法則與新增國家檔案
+========================= */
+
+.world-law-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:18px;
+    max-width:1100px;
+    margin:0 auto 20px;
+}
+
+.world-law-grid .card{
+    padding:26px;
+}
+
+.world-law-grid h3{
+    margin-top:0;
+}
+
+.law-note{
+    border-left:4px solid #8b77b8 !important;
+}
+
+.nation-page .archive-header nav{
+    margin-bottom:0;
+}
+
+.xiyao-page{
+    background:linear-gradient(160deg, #f8f4ed 0%, #fffdf8 52%, #eef4f8 100%);
+    color:#424b62;
+}
+
+.xiyao-page .archive-header,
+.xiyao-page footer{
+    background:linear-gradient(135deg, #334960, #536b7c 55%, #a27d56);
+}
+
+.xiyao-page .logo,
+.xiyao-page .subtitle,
+.xiyao-page .motto,
+.xiyao-page footer p{
+    color:#fff;
+}
+
+.xiyao-page h2,
+.xiyao-page h3{ color:#49667c; }
+.xiyao-page p{ color:#4d5965; }
+
+.xiyao-button{
+    display:inline-block;
+    padding:12px 24px;
+    border-radius:999px;
+    background:#fff;
+    color:#49667c;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.xiyao-button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 6px 18px rgba(32,53,70,.26);
+}
+
+.cangge-page{
+    background:linear-gradient(165deg, #ebf8fc, #f9feff 50%, #eaf5f2);
+}
+
+.cangge-page .archive-header,
+.cangge-page footer{ background:#a9d7db; }
+.cangge-page .logo,
+.cangge-page h2,
+.cangge-page h3{ color:#317783; }
+.cangge-page p{ color:#406875; }
+
+.cangge-button,
+.fulight-button{
+    display:inline-block;
+    padding:12px 24px;
+    border-radius:999px;
+    background:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.cangge-button{ color:#317783; }
+.cangge-button:hover{ box-shadow:0 6px 18px rgba(49,119,131,.25); transform:translateY(-3px); }
+
+.fulight-page{
+    background:linear-gradient(155deg, #fff4e9, #fffaf5 50%, #f4ebf7);
+}
+
+.fulight-page .archive-header,
+.fulight-page footer{ background:linear-gradient(135deg, #c47b76, #d89a70); }
+.fulight-page .logo,
+.fulight-page .subtitle,
+.fulight-page .motto,
+.fulight-page footer p{ color:#fff; }
+.fulight-page h2,
+.fulight-page h3{ color:#a45c68; }
+.fulight-page p{ color:#6e5362; }
+.fulight-button{ color:#a45c68; }
+.fulight-button:hover{ box-shadow:0 6px 18px rgba(164,92,104,.25); transform:translateY(-3px); }
+
+@media (max-width:768px){
+    .world-law-grid{ grid-template-columns:1fr; }
 }

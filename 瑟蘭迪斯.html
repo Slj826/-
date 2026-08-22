@@ -1,114 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>瑟蘭迪斯</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>瑟蘭迪斯｜伊萊希亞</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="yuyou-page">
-
-<header class="archive-header">
-
-<div class="logo">
-    ✦ 瑟蘭迪斯 ✦
-</div>
-
-<p class="subtitle">
-    瑟蘭迪斯
-</p>
-
-<p class="motto">
-    瑟蘭迪斯
-</p>
-
-<nav>
-
-<div class="character-links-top">
-
-<a href="瑟蘭迪斯.html" class="pink-button"></a>
-<a href="瑟蘭迪斯.html" class="pink-button"></a>
-<a href="瑟蘭迪斯.html" class="pink-button"></a>
-<a href="index.html" class="pink-button">返回</a>
-
-</div>
-
-</nav>
-
-</header>
-
-<section class="nation-card">
-
-<h2>瑟蘭迪斯</h2>
-
-<p class="tagline">
-靈獸的起源之地。
-</p>
-
-<div class="card">
-
-<h3>✦ 国家定位</h3>
-<p>
-...
-</p>
-
-<h3>✦ 基本信息</h3>
-<ul>
-...
-</ul>
-
-<h3>✦ 社会结构</h3>
-<p>
-...
-</p>
-
-<h3>✦ 与世界关系</h3>
-<p>
-...
-</p>
-
-</div>
-
-</section>
-
-
-<footer>
-
-<p>@ Sljin</p>
-<p>© 2026 Elysia</p>
-
-</footer>
-
-<script>
-document.querySelectorAll("img").forEach(img=>{
-    img.setAttribute("draggable","false");
-});
-
-
-document.addEventListener("keydown", function(e){
-
-    if(
-        e.ctrlKey &&
-        (
-            e.key === "c" ||
-            e.key === "u" ||
-            e.key === "s"
-        )
-    ){
-        e.preventDefault();
-    }
-
-});
-
-</script>
-
-<script src="js/script.js">
-</script>
-
+<body class="serandis-page">
+  <header class="archive-header">
+    <div class="logo">༄ 瑟蘭迪斯 ༄</div>
+    <p class="subtitle">Serandis</p><p class="motto">原初靈性仍在風與群山間回響。</p>
+    <nav aria-label="瑟蘭迪斯導覽" class="character-links-top">
+      <a href="#國家簡介" class="pink-button">國家簡介</a><a href="#國家定位" class="pink-button">國家定位</a><a href="#基本資訊" class="pink-button">基本資訊</a><a href="#社會結構" class="pink-button">社會結構</a><a href="#與世界的關係" class="pink-button">與世界的關係</a><a href="index.html" class="pink-button">返回</a>
+    </nav>
+  </header>
+  <main>
+    <section id="國家簡介" class="nation-card"><div class="card"><h2>༄ 國家簡介 ༄</h2><p class="tagline">瑟蘭迪斯是真裔與靈獸文化最濃厚的國度。它被稱為靈獸的起源之地，卻不排斥人類與混血者；國家的身分來自共享的土地與文化，而非單一種族。</p></div></section>
+    <section id="國家定位" class="nation-card"><div class="card"><h2>༄ 國家定位 ༄</h2><p>瑟蘭迪斯保留氏族、學庭與王庭交織的社會傳統，也在各國之間維護靈獸與真裔的權利。</p></div></section>
+    <section id="基本資訊" class="nation-card"><div class="card"><h2>༄ 基本資訊 ༄</h2><ul><li>文化主體：真裔與靈獸文化濃厚</li><li>統制者：云砚·菲利浦·阿斯蘭</li><li>繼承人：篁·瑟恩·阿斯蘭</li><li>王室：寓幽、篁與墨染皆為云砚與伊萊娜的子女</li></ul></div></section>
+    <section id="社會結構" class="nation-card"><div class="card"><h2>༄ 社會結構 ༄</h2><p>氏族、學庭與王庭共同構成社會。真裔因壽命與力量各異，常承擔守護、教育與研究責任；普通靈獸、人類與混血者同樣受到國法保護。</p></div></section>
+    <section id="與世界的關係" class="nation-card"><div class="card"><h2>༄ 與世界的關係 ༄</h2><p>瑟蘭迪斯與艾爾德利亞因王室婚姻與長年往來關係緊密。兩國在教育、邊境與王室事務上持續交流，也與其他國度維持航路、學術與氏族聯繫。</p></div></section>
+  </main>
+  <nav>
+    <div class="character-buttons">
+      <a href="艾爾德利亞.html" class="eldelia-button2">艾爾德利亞</a>
+      <a href="index.html" class="pink-button">返回</a>
+    </div>
+  </nav>
+  <footer><p>@ Sljin</p><p>© 2026 Elysia</p></footer>
+  <script>document.querySelectorAll('img').forEach((img) => { img.draggable = false; });</script>
 </body>
 </html>
