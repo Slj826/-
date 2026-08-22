@@ -2482,15 +2482,16 @@ nav{
 
     position:absolute;
 
-    top:42%;
+    top:50%;
     left:50%;
 
     transform:translate(-50%,-50%);
 
     color:white;
 
-  font-size:34px;
+    font-size:clamp(38px,8vw,68px);
     font-weight:700;
+    letter-spacing:.15em;
 
     opacity:0;
 
@@ -2700,6 +2701,9 @@ section{
 
 .world-law-grid .card{
     padding:26px;
+    min-height:260px;
+    display:flex;
+    flex-direction:column;
 }
 
 .world-law-grid h3{
@@ -2790,6 +2794,87 @@ section{
 .fulight-button{ color:#a45c68; }
 .fulight-button:hover{ box-shadow:0 6px 18px rgba(164,92,104,.25); transform:translateY(-3px); }
 
+/* 國家頁底部跳轉：沿用內容卡片；同一頁的按鈕共用一種專屬新色 */
+.nation-explorer .card{ text-align:center; }
+.nation-explorer-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+}
+
+.nation-explorer-links a{
+    display:inline-block;
+    padding:10px 18px;
+    border:1px solid transparent;
+    border-radius:999px;
+    font-weight:700;
+    transition:transform .25s ease, filter .25s ease, box-shadow .25s ease;
+}
+
+.nation-explorer-links a:hover{
+    transform:translateY(-3px);
+    filter:brightness(1.06);
+    box-shadow:0 7px 18px rgba(48,47,78,.22);
+}
+
+.eldelia-page .nation-explorer-links a{ background:#7f86bd; border-color:#626aa2; color:#fff !important; }
+.serandis-page .nation-explorer-links a{ background:#71907e; border-color:#527160; color:#fff !important; }
+.xiyao-page .nation-explorer-links a{ background:#49667c; border-color:#354d60; color:#fff !important; }
+.cangge-page .nation-explorer-links a{ background:#317783; border-color:#235d68; color:#fff !important; }
+.fulight-page .nation-explorer-links a{ background:#a45c68; border-color:#824552; color:#fff !important; }
+
+/* 燼痕戰爭檔案 */
+.war-archive-page{ background:linear-gradient(155deg,#fff8ed,#f7edf0 52%,#ede9f5); }
+.war-archive-page .archive-header,
+.war-archive-page footer{ background:linear-gradient(135deg,#563746,#9a5d55); }
+.war-archive-page .logo,
+.war-archive-page .subtitle,
+.war-archive-page .motto,
+.war-archive-page footer p{ color:#fff8e9; }
+.war-archive-page h2,
+.war-archive-page h3{ color:#96504b; }
+.war-archive-page p{ color:#654c54; }
+.war-button{
+    display:inline-block;
+    margin:5px;
+    padding:11px 20px;
+    border:1px solid rgba(255,247,225,.74);
+    border-radius:999px;
+    background:rgba(255,255,255,.12);
+    color:#fff8e9;
+    transition:.25s;
+}
+.war-button:hover{ transform:translateY(-3px); background:#fff1d4; color:#78444a; box-shadow:0 6px 16px rgba(55,24,31,.25); }
+.war-entry{ position:relative; padding-top:76px; }
+.war-year{
+    position:absolute;
+    top:24px;
+    left:26px;
+    padding:7px 14px;
+    border-radius:999px;
+    background:#96504b;
+    color:#fff8e9;
+    font-weight:700;
+}
+.war-note{ margin-top:24px; color:#96504b !important; font-weight:700; text-align:center; }
+
+.serandis-war-button{
+    display:inline-block;
+    padding:11px 20px;
+    border:1px solid #2b6546;
+    border-radius:999px;
+    background:#397356;
+    color:#fff !important;
+    font-weight:700;
+    transition:.25s;
+}
+.serandis-war-button:hover{ transform:translateY(-3px); background:#28543e; box-shadow:0 6px 16px rgba(43,101,70,.28); }
+
+@media (max-width:540px){
+    .nation-explorer-links a{ padding:9px 14px; }
+}
+
 @media (max-width:768px){
     .world-law-grid{ grid-template-columns:1fr; }
 }
@@ -2825,7 +2910,11 @@ section{
 }
 
 .intro-copy{
-    position:relative;
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:min(88vw,680px);
+    transform:translate(-50%,-50%);
     z-index:2;
     max-width:min(88vw,680px);
     padding:28px;
@@ -2835,6 +2924,7 @@ section{
 }
 
 .intro-name{
+    font-family:"Quicksand","Noto Sans TC",sans-serif;
     font-size:clamp(38px,8vw,68px);
     font-weight:700;
     letter-spacing:.15em;
@@ -2890,8 +2980,11 @@ section{
 
 .intro--prism{ background:linear-gradient(135deg,#ec8fa6,#ffc876 25%,#a9e1aa 49%,#87c7ed 72%,#b69be2); }
 .intro--prism .intro-motifs span{ color:#fff8ba; animation-name:introSpark; }
+.intro--pinkmist{ background:radial-gradient(circle at 50% 48%,rgba(255,245,252,.96) 0 8%,rgba(255,199,224,.56) 31%,transparent 61%),linear-gradient(145deg,#8b486f,#ec9fc5 49%,#5b3159); color:#fff; }
+.intro--pinkmist .intro-haze{ background:radial-gradient(circle,rgba(255,255,255,.56),transparent 64%); }
+.intro--pinkmist .intro-motifs span{ color:#fff4fa; animation-name:introSpark; }
 
-@keyframes introCopy{ from{opacity:0;transform:scale(.86)} to{opacity:1;transform:scale(1)} }
+@keyframes introCopy{ from{opacity:0;transform:translate(-50%,-50%) scale(.86)} to{opacity:1;transform:translate(-50%,-50%) scale(1)} }
 @keyframes introHaze{ from{transform:scale(.85) rotate(0)} to{transform:scale(1.18) rotate(15deg)} }
 @keyframes introFloat{ from{transform:translateY(-18px) rotate(-8deg)} to{transform:translateY(22px) rotate(10deg)} }
 @keyframes introTide{ from{transform:translate(-20px,16px) rotate(-12deg)} to{transform:translate(20px,-16px) rotate(12deg)} }
