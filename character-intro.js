@@ -8,7 +8,7 @@
     if (!name || !theme) return;
 
     const themes = {
-        pinkmist: { motif: "✧", line: "" },
+        pinkmist: { motif: "✦", line: "" },
         tide: { motif: "◌", line: "潮汐会把命运送回岸边。" },
         fire: { motif: "✹", line: "从火焰里走出来的人，不会再害怕黑夜。" },
         sky: { motif: "✧", line: "星光落在她的眼睛里。" },
