@@ -8,16 +8,16 @@
     if (!name || !theme) return;
 
     const themes = {
-        tide: { motif: "◌", line: "潮汐会把命运送回岸边。" },
-        fire: { motif: "✹", line: "从火焰里走出来的人，不会再害怕黑夜。" },
-        sky: { motif: "✧", line: "星光落在她的眼睛里。" },
-        moon: { motif: "☾", line: "月亮记得所有尚未说出口的预言。" },
-        wind: { motif: "❋", line: "铃声与风，会带她去更远的地方。" },
-        ink: { motif: "〰", line: "一折扇，一段唱词，一场未散的戏。" },
-        thread: { motif: "✦", line: "旧舞台的丝线，仍牵着她的名字。" },
-        rabbit: { motif: "△", line: "她听见风里很轻很轻的心事。" },
-        butterfly: { motif: "🦋", line: "故事翻页时，蓝蝶正落在字里行间。" },
-        prism: { motif: "✦", line: "她带着彩色的尾光，去赚很多很多钱。" }
+        tide: { motif: "𓆝", line: "潮汐会把命运送回岸边。" },
+        fire: { motif: "¡", line: "从火焰里走出来的人，不会再害怕黑夜。" },
+        sky: { motif: "✯", line: "星光落在她的眼睛里。" },
+        moon: { motif: "❀", line: "月亮记得所有尚未说出口的预言。" },
+        wind: { motif: "𖤣", line: "铃声与风，会带她去更远的地方。" },
+        ink: { motif: "༻", line: "一折扇，一段唱词，一场未散的戏。" },
+        thread: { motif: "✣", line: "旧舞台的丝线，仍牵着她的名字。" },
+        rabbit: { motif: "𐙚", line: "她听见风里很轻很轻的心事。" },
+        butterfly: { motif: "ʚɞ", line: "故事翻页时，蓝蝶正落在字里行间。" },
+        prism: { motif: "⦿", line: "她带着彩色的尾光，去赚很多很多钱。" }
     };
 
     const data = themes[theme];
